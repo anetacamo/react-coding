@@ -1,0 +1,50 @@
+button {
+  padding: 4px 8px;
+  padding-top: 5px;
+  margin: 4px;
+  background-color: transparent;
+  border: 2px solid black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 12px;
+  //font-family: Special Elite;
+  color: black;
+  cursor: pointer;
+  &:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 350ms;
+  }
+  @media (max-width: 900px) {
+    font-size: 15px;
+    padding: 12px 24px;
+  }
+  @media (max-width: 600px) {
+    font-size: 14px;
+    padding: 18px 20px;
+  }
+}
+
+.custom-file-upload {
+  background-color: black;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 4px 8px;
+  border: 2px solid black;
+  display: inline-block;
+  z-index: 4;
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    background-color: transparent;
+    color: black;
+    transition-duration: 350ms;
+  }
+  input {
+    margin-top: -24px;
+    margin-left: 24px;
+  }
+}

@@ -1,0 +1,139 @@
+$blue: #4bc2f1;
+$sky: #c9ceeb;
+$yellow: #ffa415;
+$lava: #ff1646;
+$purple: #8d00ff;
+$paris: #031faf;
+$turqoise: #00bead;
+
+.code-box {
+  background-color: $paris;
+  padding: 12px;
+  color: white;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 24px;
+
+  .header {
+    padding: 12px;
+    background-color: $lava;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+  }
+  .flex-center-hor {
+    display: flex;
+    align-items: center;
+  }
+  .flex-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex-space-btw {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+  }
+  .flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .center {
+    text-align: center;
+  }
+
+  .logo {
+    padding: 12px;
+    background-color: $yellow;
+  }
+
+  .menu {
+    padding: 12px;
+    padding-left: 0;
+    background-color: $yellow;
+  }
+
+  .max-width {
+    background-color: $purple;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    padding: 12px;
+  }
+
+  .half {
+    width: 50%;
+  }
+
+  .link {
+    text-decoration: underline;
+    padding: 12px;
+    margin-left: 12px;
+    background-color: $turqoise;
+  }
+
+  .intro {
+    height: 400px;
+    padding: 12px;
+    background-color: $lava;
+  }
+
+  .text-container {
+    background-color: $yellow;
+    padding: 12px;
+    max-width: 200px;
+  }
+  .container {
+    background-color: $yellow;
+    padding: 12px;
+  }
+
+  .card {
+    background-color: $yellow;
+    padding: 12px;
+    height: 80px;
+
+    margin: 6px;
+  }
+  .card-flex {
+    min-width: 120px;
+    max-width: 240px;
+    flex: 1;
+  }
+  .card-set {
+    width: 80px;
+  }
+
+  .cards {
+    padding: 6px;
+    background-color: $lava;
+  }
+
+  .image {
+    background-color: $blue;
+    width: 60px;
+  }
+  .text {
+    background-color: $turqoise;
+    margin-left: 12px;
+    padding: 12px;
+  }
+  .section {
+    padding: 12px;
+  }
+  .bg-red {
+    background-color: $lava;
+  }
+  .bg-gray {
+    background-color: $yellow;
+  }
+  .bg-blue {
+    background-color: $paris;
+  }
+  .bg-green {
+    background-color: $turqoise;
+  }
+}
