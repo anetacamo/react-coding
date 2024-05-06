@@ -3,7 +3,6 @@ title: Html Tags
 description: List of most commonly used html tags
 tags: [html, basics]
 type: learning
-published: true
 ---
 
 # Most commonly used HTML tags

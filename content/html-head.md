@@ -4,7 +4,6 @@ description: How to write HTML document
 menu: true
 tags: [html, basics]
 type: learning
-published: true
 ---
 
 # Html Head
