@@ -18,7 +18,7 @@ For that, _React Router_ is popular solution.
 we will build simple project with few routes. \
 blogs inside blogs will be rendered dynamically from `blogs.json`
 
-> blogs dont have to blogs, but any kind of data, can be pictures, projects you have worked on so you can make an online portfolio, shop items, films, todolists.
+> blogs dont have to blogs, but any kind of data. It can be pictures, projects you have worked on so you can make an online portfolio, shop items, films, todolists.
 
 ```
 home
@@ -113,7 +113,47 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 );
 ```
 
-`App.jsx`
+> First step in enabling the router is using this wrapper around our app.
+
+### Setting up a first route
+
+Inside `App.jsx`
+
+We will start by creating a `<Routes></Routes>` object. Within this pair tag we will define our router model.
+
+First route we would most likely want to have would be a homepage.
+When we visit "/" we would like to render home component or page. And This is exactly what we need to tell to our first `<Route />`.
+
+`<Route path="/" element={<Home />} />`
+
+> Route accepts two main arguments: the path and what element to render. Where and what to render.
+
+Lets set up this component and see if it works.
+
+### Adding multiple routes
+
+```jsx
+<Route path="/" element={<Home />} />
+<Route path="about" element={<About />} />
+<Route path="contact" element={<Contact />} />
+```
+
+### Not Found page
+
+`<Route path="*" element={<NotFound />} />`
+
+### Nested routes
+
+```jsx
+<Routes>
+  <Route path="/" element={<Layout />}>
+    <Route index element={<Home />} />
+    <Route path="about" element={<About />} />
+    <Route path="contact" element={<Contact />} />
+    <Route path="*" element={<NotFound />} />
+  </Route>
+</Routes>
+```
 
 ```jsx
 import * as React from "react";
@@ -176,7 +216,7 @@ Now you have an empty repository on github. We will send - _push_ - some code th
 You can copy three lines of code in the section called `…or push an existing repository from the command line`.
 Mine looks like this
 
-```js
+```bash
 git remote add origin https://github.com/anetacamo/react-router.git
 git branch -M main
 git push -u origin main
@@ -191,7 +231,7 @@ Now head back into the VS Code, your project folder and terminal (if its running
 If that worked it should have publisjed your locale code to github repository!
 However last thing: you need to update the repository with your most recent changes.
 
-```
+```bash
 git add .
 git commit -m "intial commit"
 git push
@@ -212,13 +252,13 @@ For serving a fast running website you need optimized, compressed version of you
 
 For this there is `gh-pages`. Just install a package inside your project in VS Code.
 
-```
+```bash
 yarn add -D gh-pages
 ```
 
 or
 
-```
+```bash
 npm install gh-pages --save-dev
 ```
 
@@ -227,7 +267,7 @@ npm install gh-pages --save-dev
 in Vs code, inside your project, find `package.json` file in the root.
 And look for this code snippet
 
-```
+```json
 "scripts": {
   "dev": "next dev",
   "build": "next build",
@@ -238,7 +278,7 @@ And look for this code snippet
 
 and after line with `lint` add those two lines:
 
-```
+```json
 "predeploy" : "npm run build",
 "deploy" : "gh-pages -d build",
 ```
@@ -247,14 +287,14 @@ and after line with `lint` add those two lines:
 
 Lastly, on the line 2 before `"name": "your-app-name",` you add one more line with the landing page of your app. Usually looking like this:
 
-```
+```json
 "homepage": "https://your-user-name.github.io/your-app-name/",
 ```
 
 That’s it! We‘ve finished configuring the package.json file.
 Now, let’s commit our changes and push the code to our remote repository so it gets the latest changes, like so:
 
-```
+```bash
 git add .
 git commit -m "setup gh-pages"
 git push
@@ -266,13 +306,13 @@ So this way you update your development code.
 
 But from now on, we can _deploy_ or _publish_ our React application by simply running following:
 
-```
+```bash
 npm run deploy
 ```
 
 or
 
-```
+```bash
 yarn run deploy
 ```
 

@@ -1,3 +1,4 @@
+import PrismLoader from "@/components/PrismLoader";
 import {
   getAllPostIds,
   getPostData,
@@ -33,6 +34,7 @@ export default function Post({ postData, allPostsData }) {
       <div className="content-holder">
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </div>
+      <PrismLoader />
     </>
   );
 }
