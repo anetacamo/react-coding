@@ -48,6 +48,8 @@ published web-app: https://anetacamo.github.io/react-router/
 
 > Homework: The "blogs" section doesn’t have to be about blogs—it could be any kind of data. you could use it to showcase pictures, projects for an online portfolio, shop items, films, or to-do lists.
 
+## practical part
+
 ### Create your project
 
 - create a folder on your computer in desired location and name it.
@@ -62,19 +64,24 @@ npm create vite@latest .
 > by writing the `.` you will generate the code inside the folder location, if you give it a name instead it will create another folder where it will add the project.
 
 when you asked `Need to install the following packages:` press `y`
+✔ Package name: … lesson-2-react-router
+✔ Select a framework: › React
+✔ Select a variant: › JavaScript
 
 #### run the server
 
-inside terminal type based on your prefered package
+Done. Now run:
 
 ```
-yarn run start
+  yarn install
+  yarn dev
 ```
 
 or
 
 ```
-npm run start
+  npm install
+  npm run dev
 ```
 
 > if you need to stop the server running, press `ctrl + c`
@@ -100,7 +107,7 @@ Inside folder `src` delete most of the files so all you have left would be those
 ```
 src
   index.css
-  index.js
+  main.jsx
   App.jsx
 ```
 
