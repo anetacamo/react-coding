@@ -9,16 +9,20 @@ published: true
 # react router
 
 React App doesn't include page routing. \
-That means there is no simple way to structure and organize the pages.
 
-For that, _React Router_ is popular solution.
+React Router is a popular library for managing navigation in React applications. \ 
+- provides a way to define routes and associate them with specific components.
+- enabling single-page applications to simulate multi-page navigation. 
+
+> With _React Router_, you can create dynamic, nested, and parameterized routes, making it easy to organize and structure your app’s pages.
+
 
 ### What will we build
 
-we will build simple project with few routes. \
-blogs inside blogs will be rendered dynamically from `blogs.json`
+we will build simple project with few first level routes. \
+nested blogs with landing page and list of blogs rendered dynamically from `blogs.json`
 
-> blogs dont have to blogs, but any kind of data. It can be pictures, projects you have worked on so you can make an online portfolio, shop items, films, todolists.
+> homework: blogs dont have to be blogs, but any kind of data. It can be pictures, projects you have worked on so you can make an online portfolio, shop items, films, todolists.
 
 ```
 home
@@ -74,13 +78,13 @@ npm run start
 Now when your react app is running we need to install the router.
 
 ```js
-npm i react-router-dom --save-dev
+npm install react-router-dom
 ```
 
 or
 
 ```js
-yarn add -D react-router-dom
+yarn add react-router-dom
 ```
 
 > `-D` or `--dev` is short for "development dependency," and refers to a dependency in a software project that is only needed during development and testing, but not during production or runtime, using this flag you can reduce the size of the production bundle Size. In this project, you can skip this _flag_ in your command.
