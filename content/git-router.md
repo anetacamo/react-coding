@@ -8,14 +8,14 @@ published: true
 
 # react router
 
+React Router is a popular library for managing navigation in React applications. \
 React App doesn't by default include page _routing_.
 
 ### what is routing?
 
 A _route_ is a URL path in your application that’s mapped to a specific component or page. \
-When users visit a route (like /about or /profile), the app renders the component associated with that path
-
-React Router is a popular library for managing navigation in React applications.
+When users visit a route (like /about or /profile), the app renders the component associated with that path. \
+_Routing_ is the system of routes.
 
 - provides a way to define routes and associate them with specific components.
 - enabling single-page applications to simulate multi-page navigation.
@@ -24,14 +24,12 @@ React Router is a popular library for managing navigation in React applications.
 
 ### What will we build
 
-We’ll create a simple project with several routes. \
+We’ll create a simple project with several routes.
 
 - couple of main routes
 - nested route for "blogs" with:
   - A landing page (index)
   - A list of blogs rendered dynamically from data in blogs.json
-
-> Homework: The "blogs" section doesn’t have to be about blogs—it could be any kind of data. you could use it to showcase pictures, projects for an online portfolio, shop items, films, or to-do lists.
 
 ```
 home
@@ -47,6 +45,8 @@ blogs
 here you can see the repository with the final code:
 https://github.com/anetacamo/react-router \
 published web-app: https://anetacamo.github.io/react-router/
+
+> Homework: The "blogs" section doesn’t have to be about blogs—it could be any kind of data. you could use it to showcase pictures, projects for an online portfolio, shop items, films, or to-do lists.
 
 ### Create your project
 
@@ -77,7 +77,7 @@ or
 npm run start
 ```
 
-> if you need to stop the server running `ctrl + c`
+> if you need to stop the server running, press `ctrl + c`
 
 > in terminal you can press `arrow up` to access your previously typed commands
 
