@@ -133,15 +133,18 @@ import "./App.css";
 function App() {
   const [users, setUsers] = useState([]);
 
-  useEffect(() => {
+  const fetchUsers = () => {
     fetch("https://reqres.in/api/users")
       .then((res) => res.json())
-      .then((data) => {
-        console.log(data); // Log the data for debugging
-        setUsers(data.data); // Access the data array directly
-      })
-      .catch((error) => console.error("Error fetching data:", error));
+      .then((data) => setUsers(data.data))
+      .catch((error) => console.error("Error fetching users:", error));
+  };
+
+  useEffect(() => {
+    fetchUsers();
   }, []);
+
+  console.log(users);
 
   return (
     <div className="app-container">
