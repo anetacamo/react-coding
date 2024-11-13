@@ -20,6 +20,17 @@ published: true
 
 The `fetch` API is a **native JavaScript API** for making HTTP requests from the browser. It is promise-based, meaning it handles requests and responses asynchronously.
 
+## CRUD methods
+
+There are four types of methods that are provided:
+
+- POST, create: Used to send data to the server to create a new resource.
+- GET, review: Used to retrieve data from a server.
+- PUT, update: Used to update or replace an existing resource.
+- DELETE, delete: Used to remove a resource from the server.
+
+### API
+
 - **API** stands for Application Programming Interface: a set of rules and tools for building software and applications.
 - There are many free APIs you can use:
   - [Chuck Norris API](https://api.chucknorris.io/jokes/random)
