@@ -3,11 +3,17 @@
   display: flex;
   color: white;
   padding: 0 12px;
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: blueviolet;
+    }
+  }
 }
 .inner {
   width: 100%;
   display: flex;
-
   align-items: center;
   justify-content: space-between;
 }

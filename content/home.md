@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Intro
 description: Go back home. I mean, get started
 tags: [html, basics]
 type: learning
@@ -8,6 +8,7 @@ published: true
 
 # Get Started
 
+<!--
 ### HTML
 
 1. [introduction](./#/html)
@@ -17,7 +18,7 @@ published: true
 ### CSS
 
 4. [introduction](./#/css)
-5. [list of props](./#/css-props)
+5. [list of props](./#/css-props) -->
 
 ### What is HTML and CSS?
 
@@ -39,7 +40,7 @@ Create a folder on your desktop and open it in the VS Code. Here, create a new f
 
 Go to your browser and click `CMD + o` for mac and `CTRL + o` for windowa . Find your folder and open `index.html`. At this point your file might be empty. But this is a plce you will/can see all the code being executed! You can refresh the page with `CMD + r` for mac or `CTRL + r`.
 
-### Building the folder
+<!-- ### Building the folder
 
 Your website might have more then a homepage named `index.html`. If so, those pages should be placed in the same folder and saved with their specific names: `about.html` and `contact.html` You will probably need a folder with images and a folder with styles. And this is how the structure of your folder might end up looking:
 
@@ -54,11 +55,11 @@ your-web-folder/
 -- images/
 ---- image01.jpg
 ---- image02.jpg
-```
+``` -->
 
-### Inspecting element
+### Inspecting in browser
 
-When you are coding most of the time it does not work. The best tool to help finding out where the problem is a _code inspector_ built in most of the big browsers like _chrome_ or _firefox_.
+_code inspector_ is built in most of the big browsers like _chrome_ or _firefox_.
 
 Head to the browser with your web and rightclick anything you would like to inspect. Choose inspect element from menu. Alternatively `Cmd + Option + i`. Here you can browse whole `DOM` structure. If you click on any of the `elements` you can see what styles are applied and you can add/remove or modify them to easily see how the page would look.
 

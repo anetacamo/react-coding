@@ -44,48 +44,6 @@ We’ll create a simple project where we will fetch a list of users from [https:
 
 You might find it useful to install the JSON Viewer extension for Chrome to help visualize JSON data.
 
-## Project Setup
-
-### Create Your Project
-
-1. **Create a folder** on your computer and name it as you like.
-2. **Open your folder in VS Code**. Go to `File -> Open...`
-3. **Open a terminal** inside VS Code. Go to `Terminal -> New Terminal`.
-4. Generate a new React project in your folder with the following command:
-
-   ```bash
-   npm create vite@latest .
-   ```
-
-> By specifying . at the end, you’ll create the project in the current folder.
-
-when you asked `Need to install the following packages:` press `y`
-✔ Package name: … lesson-2-react-router
-✔ Select a framework: › React
-✔ Select a variant: › JavaScript
-
-#### run the server
-
-Done. Now run:
-
-```
-  yarn install
-  yarn dev
-```
-
-or
-
-```
-  npm install
-  npm run dev
-```
-
-> if you need to stop the server running, press `ctrl + c`
-
-> in terminal you can press `arrow up` to access your previously typed commands
-
-delete the content inside the project.
-
 ### useEffect hook
 
 to fetch api we simply need to find the endpoint on the internet.

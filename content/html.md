@@ -3,7 +3,6 @@ title: Html
 description: How to write HTML document
 tags: [html, basics]
 type: learning
-published: true
 ---
 
 # Writing HTML
