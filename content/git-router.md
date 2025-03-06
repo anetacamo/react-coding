@@ -6,6 +6,16 @@ type: learning
 published: true
 ---
 
+React is a _single-page application (SPA)_, 
+meaning we no longer have multiple HTML files like  `index.html`, `about.html` and `contact.html`. - Instead, everything runs on a single `index.html`.
+
+when user clicks `about` on menu, we don’t load a new `about.html` page. Instead, we dynamically show a component with the "About" page content. 
+This makes navigation fast and smooth since no new pages are fetched from the server.
+
+However, this also means we need to handle routing ourselves (e.g., with React Router) and manage SEO-related metadata manually.
+
+> Nowadays there are tools like Next.js. Next.js solves these issues by offering built-in routing, server-side rendering (SSR), static site generation (SSG), and better SEO support—making React apps more efficient and search-friendly..
+
 # react router
 
 React Router is a popular library for managing navigation in React applications. \
