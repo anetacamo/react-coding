@@ -6,6 +6,8 @@ type: learning
 published: true
 ---
 
+# Publishing your React App to github
+
 ## Github
 
 Github is a platform where you can _publish_ and _store_ your code for free.

@@ -25,18 +25,20 @@ export default function Home({ allPostsData }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Menu allPostData={allPostsData} />
-      <main>
-        <section>
-          <h2>Blog</h2>
-          {/* <ul>
-            {allPostsData.map(
-              ({ id, date, title, description, tags, type }) => (
-                <li key={id}>{title}</li>
-              )
-            )}
-          </ul> */}
-        </section>
-      </main>
+      <div className="content-holder">
+        <h1>Blog</h1>
+
+        <h3>general info</h3>
+
+        <li>intro</li>
+        <li>html tags</li>
+
+        <h3>Next JS & React Routing</h3>
+        <li>Choosing a right setup -- SPA or SSG</li>
+        <li>Next project setup</li>
+        <li>React Router</li>
+        <li>React Project setup</li>
+      </div>
     </>
   );
 }

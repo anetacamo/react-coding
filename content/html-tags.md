@@ -6,7 +6,7 @@ type: learning
 published: true
 ---
 
-## HTML tags
+# HTML tags
 
 - HTML consists of tags.
 - Tags are way to structure the content.

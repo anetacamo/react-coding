@@ -4,6 +4,8 @@ tags: [js, basics]
 type: learning
 ---
 
+# JS methods
+
 ## string methods
 
 ```js

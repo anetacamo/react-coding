@@ -6,7 +6,7 @@ type: learning
 published: true
 ---
 
-## Next Project Setup
+# Next Project Setup
 
 ### Create Your Project
 
@@ -21,15 +21,15 @@ npx create-next-app@latest
 
 > By specifying `.` at the end, you’ll create the project in the current folder.
 
+> if you wont do that be aware that the app will be installed into another folder where you have to navigate to before you install dependencies.
+
 when you asked `Need to install the following packages:` press `y`
 
-- ✔ Package name: … lesson-2-react-router
-- ✔ Select a framework: › React
-- ✔ Select a variant: › JavaScript
+Choose all the defaults setups
 
 #### run the server
 
-> IMPORTANT! before you install dependencies, try to understand where are you at your project structure. Are you in the right folder? - do you see generated files or do you need to go one level lower inside the folder?
+> before you install dependencies, try to understand where are you at your project structure. Are you in the right folder? - do you see generated files or do you need to go one level lower inside the folder?
 
 #### navigation in terminal by commands
 
@@ -37,17 +37,15 @@ when you asked `Need to install the following packages:` press `y`
 - `cd` + `filename` - move inside the folder
 - `..` go a level higher
 
-so once you are in the right place - lets generate the _dependencies_. And run our app!
+so once you are in the right place - lets run our app!
 
 ```
-  yarn install
   yarn dev
 ```
 
 or
 
 ```
-  npm install
   npm run dev
 ```
 
@@ -57,11 +55,22 @@ or
 
 ### delete the un-deserved content inside the project.
 
-Inside folder `src` delete most of the files so all you have left would be those:
+Inside folder `app` delete everything and create those folders
 
 ```
-src
-  index.css
-  main.jsx
-  App.jsx
+app
+  styles/
+  components/
+  page.js
+  layout.js
+```
+
+install sass
+
+```
+yarn add sass
+```
+
+```
+npm install sass
 ```

@@ -5,7 +5,7 @@ tags: [css]
 type: learning
 ---
 
-## Tables
+# Tables
 
 ```html
 <form>
@@ -209,7 +209,8 @@ a regular expression that the input field's value is checked against, when the f
 - `placeholder="123-45-678"`
   The short hint is displayed in the input field before the user enters a value.
 
- <input value="123-45-678" />
+{" "}
+<input value="123-45-678" />
 
 - `required`
   specifies that an input field must be filled out before submitting the form.

@@ -6,7 +6,7 @@ type: learning
 published: true
 ---
 
-## react router
+# react router
 
 React Router is a popular library for managing navigation in React applications. \
 React App doesn't by default include page _routing_.

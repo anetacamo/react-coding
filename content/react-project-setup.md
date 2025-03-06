@@ -6,7 +6,7 @@ type: learning
 published: true
 ---
 
-## React Project Setup
+# React Project Setup
 
 ### Create Your Project
 
